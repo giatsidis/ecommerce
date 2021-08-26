@@ -1,0 +1,6 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\giats\source\repos\ecommerce\ecommerce\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\giats\source\repos\ecommerce\ecommerce\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="C:\Users\giats\source\repos\ecommerce\ecommerce\Client\wwwroot\" />
+  <ContentRoot BasePath="_content/Telerik.UI.for.Blazor.Trial" Path="C:\Users\giats\.nuget\packages\telerik.ui.for.blazor.trial\2.26.0\build\..\staticwebassets\" />
+</StaticWebAssets>

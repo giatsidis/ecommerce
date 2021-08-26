@@ -1,0 +1,163 @@
+﻿<TelerikGrid Data="@products" Height="500px">
+    <GridColumns>
+
+        <GridColumn Field="@(nameof(Product.ProductImage))" Title="Image" Width="150px">
+            <Template>
+                @{
+                    var images = context as Product;
+                        <div class="product-img">
+                            <img class="centered-img" src="@(images.ProductImage)" />
+                        </div>
+                }
+            </Template>
+        </GridColumn>
+
+        <GridColumn Field="@(nameof(Product.ProductName))" Title="Product Name" />
+        <GridColumn Field="@(nameof(Product.Description))" Title="Description" />
+        <GridColumn Field="@(nameof(Product.UnitPrice))" Title="$Price/Unit" />
+
+        <GridColumn Field="" Title="Units In Stock">
+            <Template>
+                @{ 
+                    var stock = context as Product;
+                    if (stock.UnitInStock == 0)
+                    {
+                        <div class="out-of-stock">Out of Stock</div>
+                        <style>
+                            .out-of-stock {
+                                font-size: 25px;
+                                color:red;
+                                font-weight: 600;
+                            }
+                        </style>
+                    }
+                    else
+                    {
+                        <div class="in-stock">@stock.UnitInStock</div>
+                        <style>
+                            .in-stock {
+                                font-size: 22px;
+                                color: #45C427;
+                                font-weight: 600;
+                            }
+                        </style>
+                    }
+                }
+            </Template>
+        </GridColumn>
+
+    </GridColumns>
+</TelerikGrid>
+
+
+@code {
+    List<Product> products = new List<Product> {
+        new Product{
+            Id = 1,
+            ProductName = "Case iPhone 12",
+            Description = "The Soft Silicone case for IPHONE 12 MINI in black color has a unique finishing, with a semi-rigid structure and an ultra-soft touch.",
+            ProductImage = "https://www.bigbuy.net/500988-product_card/case-iphone-12-ksix-soft-silicone_159255.jpg",
+            UnitPrice = 8.30m,
+            UnitInStock = 3,
+        },
+        new Product
+        {
+            Id = 2,
+            ProductName = "Smartwatch Samsung Active 2",
+            Description = "Smartwatch Samsung Active 2 Under Armour 1,4 AMOLED NFC (44 mm) Black.",
+            ProductImage = "https://www.bigbuy.net/471244-product_card/smartwatch-samsung-active-2-under-armour-1-4-amoled-nfc-44-mm-black_146051.jpg",
+            UnitPrice = 319.24m,
+            UnitInStock = 1,
+        },
+        new Product
+        {
+            Id = 3,
+            ProductName = "Smartwatch Realme",
+            Description = "Smartwatch Realme RMA 161 1,4 160 mAh Bluetooth 5.0 Black.",
+            ProductImage = "https://www.bigbuy.net/760866-product_card/smartwatch-realme-rma-161-1-4-160-mah-bluetooth-5-0-black_229302.jpg",
+            UnitPrice = 36.90m,
+            UnitInStock = 5,
+        },
+        new Product
+        {
+            Id = 4,
+            ProductName = "Smartwatch LEOTEC ",
+            Description = "Smartwatch LEOTEC Swim Swolf 1,3 GPS 250 mAh IP68",
+            ProductImage = "https://www.bigbuy.net/650302-product_card_zoom/smartwatch-leotec-swim-swolf-1-3-gps-250-mah-ip68_203804.jpg",
+            UnitPrice = 48.80m,
+            UnitInStock = 5,
+        },
+        new Product
+        {
+            Id = 5,
+            ProductName = "Power Bank KSIX",
+            Description = "Power Bank KSIX Eco-Friendly 5000 mAh Bamboo",
+            ProductImage = "https://www.bigbuy.net/450879-product_card/power-bank-ksix-eco-friendly-5000-mah-bamboo_138595.jpg",
+            UnitPrice = 11.73m,
+            UnitInStock = 13,
+        },
+        new Product
+        {
+            Id = 6,
+            ProductName = "Power Bank Bamboo",
+            Description = "Power Bank Bamboo with capacity of 5000 mAh and micro USB.",
+            ProductImage = "https://www.bigbuy.net/424618-product_card/power-bank-bamboo_130619.jpg",
+            UnitPrice = 16.00m,
+            UnitInStock = 11,
+        },
+        new Product
+        {
+            Id = 7,
+            ProductName = "Bluetooth Speaker Power Bank",
+            Description = "Bluetooth Speaker with integrated Power Bank 2200 mAh 3W.",
+            ProductImage = "https://www.bigbuy.net/344944-product_card/bluetooth-speaker-power-bank-2200-mah-3w-145530_100919.jpg",
+            UnitPrice = 18.31m,
+            UnitInStock = 0,
+        },
+        new Product
+        {
+            Id = 8,
+            ProductName = "XIAOMI Smartphone",
+            Description = "Smartphone Xiaomi Redmi Note 10 Pro 6,67 Octa Core 6 GB RAM 128 GB.",
+            ProductImage = "https://www.bigbuy.net/683814-product_card/smartphone-xiaomi-redmi-note-10-pro-6-67-octa-core-6-gb-ram-128-gb_210142.jpg",
+            UnitPrice = 282.30m,
+            UnitInStock = 1,
+        },
+        new Product
+        {
+            Id = 9,
+            ProductName = "Alcatel Phone",
+            Description = "Affordable Mobile phone Alcatel 3088X 2,4 512 MB 4 GB WiFi.",
+            ProductImage = "https://www.bigbuy.net/372925-product_card/mobile-phone-alcatel-3088x-2-4-512-mb-4-gb-wifi_110808.jpg",
+            UnitPrice = 42.53m,
+            UnitInStock = 0,
+        },
+        new Product
+        {
+            Id = 10,
+            ProductName = "WIKO Smartphone",
+            Description = "Smartphone WIKO MOBILE POWER U30 6,82 MediaTek Helio G35 4 GB 64 GB 6000 mAh.",
+            ProductImage = "https://www.bigbuy.net/696502-product_card/smartphone-wiko-mobile-power-u30-6-82-mediatek-helio-g35-4-gb-64-gb-6000-mah_213921.jpg",
+            UnitPrice = 150.89m,
+            UnitInStock = 1,
+        },
+        new Product
+        {
+            Id = 11,
+            ProductName = "Tempered Glass",
+            Description = "Tempered Glass Mobile Screen Protector + Mobile Case Xiaomi Redmi 6A Contact.",
+            ProductImage = "https://www.bigbuy.net/504873-product_card/tempered-glass-mobile-screen-protector-mobile-case-xiaomi-redmi-6a-contact_159985.jpg",
+            UnitPrice = 2.80m,
+            UnitInStock = 0,
+        },
+        new Product
+        {
+            Id = 12,
+            ProductName = "Headset",
+            Description = "Headphones with Microphone + Backpack with Strings Hiditec.",
+            ProductImage = "https://www.bigbuy.net/342456-product_card/headphones-with-microphone-backpack-with-strings-hiditec-pac010008_100533.jpg",
+            UnitPrice = 24.62m,
+            UnitInStock = 2,
+        }
+    };
+}

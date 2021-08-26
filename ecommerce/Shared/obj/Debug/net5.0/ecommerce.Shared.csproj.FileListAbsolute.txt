@@ -1,0 +1,12 @@
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\bin\Debug\net5.0\ecommerce.Shared.deps.json
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\bin\Debug\net5.0\ecommerce.Shared.dll
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\bin\Debug\net5.0\ref\ecommerce.Shared.dll
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\bin\Debug\net5.0\ecommerce.Shared.pdb
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.AssemblyInfoInputs.cache
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.AssemblyInfo.cs
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.csproj.CoreCompileInputs.cache
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.dll
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ref\ecommerce.Shared.dll
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.pdb
+C:\Users\giats\source\repos\ecommerce\ecommerce\Shared\obj\Debug\net5.0\ecommerce.Shared.csproj.AssemblyReference.cache

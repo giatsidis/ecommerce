@@ -1,0 +1,15 @@
+- I used Blazor WebAssemply, because its a single page application, so a small project.
+- I added the models (Category and Product class).
+- Added ecommerce.Shared in uses to have the reference to the models.
+- Added Telerik Blazor Components to my project.
+- Created a list of random products.
+- Then I created a Table using Telerik Grid Component, and added the products.
+- Created function to show in and out of stock products and images. 
+- Added Some CSS to style the text and alignment to make it more readable.
+
+
+Overall very smooth walktrouh and instructions on documentation. Everything was
+explain in details on Telerik Blazor documentation. As my first time using Telerik it
+it was not difficult at all. Also, the next day of my registration a represantative 
+called me to ask about my trial. I didn't have any problem although it was a very 
+basic task.
